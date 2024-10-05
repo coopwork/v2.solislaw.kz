@@ -1,0 +1,9 @@
+:root {
+  --background: #fff;
+  --foreground: #000;
+
+  --primary: blue;
+  --primary-foreground: #fff;
+  --secondary: yellow;
+  --secondary-foreground: #fff;
+}
