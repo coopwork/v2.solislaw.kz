@@ -139,8 +139,10 @@ p {
   line-height: 48px;
   border-radius: 8px;
   border: 0;
-  background: -webkit-gradient(linear, left top, right top, from(#33c8c1), color-stop(50%, #119bd2), to(#33c8c1));
-  background: linear-gradient(to right, #33c8c1 0%, #119bd2 50%, #33c8c1 100%);
+  background: var(--webkit-accent-gradient);
+  background: var(--accent-gradient);
+  /* background: var(--webkit-secondary-gradient);
+  background: var(--secondary-gradient); */
   color: #fff;
   cursor: pointer;
   z-index: 5;
@@ -163,8 +165,8 @@ p {
 
 /*===== All Section Title Style =====*/
 .section-title .line {
-  background: -webkit-gradient(linear, left top, left bottom, from(#fe8464), to(#fe6e9a));
-  background: linear-gradient(#fe8464 0%, #fe6e9a 100%);
+  background: var(--webkit-line-accent-gradient);
+  background: var(--line-accent-gradient);
   width: 150px;
   height: 5px;
   margin-bottom: 10px !important;
@@ -286,7 +288,7 @@ p {
   height: 100%;
   border-style: solid;
   /* Spinner Color */
-  border-color: #361CC1 #361CC1 #E1E1E1;
+  border-color: rgb(var(--primary)) rgb(var(--primary)) #E1E1E1;
   border-radius: 50%;
   border-width: 6px;
 }
@@ -526,7 +528,7 @@ p {
 }
 
 .sticky .navbar-brand-logo {
-  fill: #253377;
+  fill: rgb(var(--primary));
   height: 60px;
 }
 
@@ -623,7 +625,7 @@ p {
 
 .navbar-nav .nav-item a:hover,
 .navbar-nav .nav-item a.active {
-  color: #fe7a7b;
+  color: rgb(var(--accent));
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px),
@@ -639,8 +641,8 @@ p {
 
 .navbar-btn .main-btn {
   line-height: 45px;
-  background: -webkit-gradient(linear, left top, right top, from(#fe8464), color-stop(50%, #fe6e9a), to(#fe8464));
-  background: linear-gradient(to right, #fe8464 0%, #fe6e9a 50%, #fe8464 100%);
+  background: var(--webkit-accent-gradient);
+  background: var(--accent-gradient);
   background-size: 200%;
 }
 
@@ -659,7 +661,7 @@ p {
 
 .sticky .navbar-nav .nav-item a.active,
 .sticky .navbar-nav .nav-item a:hover {
-  color: #fe7a7b;
+  color: rgb(var(--accent));
 }
 
 /*===== HEADER HERO =====*/
@@ -759,7 +761,7 @@ p {
    team section
    ========================================================================== */
 #team .single-team {
-  border: 1px solid #ddd;
+  border: 1px solid rgb(var(--primary), .25);
   position: relative;
   -moz-transition: all .8s ease;
   -webkit-transition: all .8s ease;
@@ -789,7 +791,7 @@ p {
   align-items: center;
   width: 45px;
   height: 45px;
-  border: 1px solid #ccc;
+  border: 1px solid rgb(var(--primary));
   border-radius: 50%;
   padding: 5px;
   line-height: 30px;
@@ -798,10 +800,10 @@ p {
 }
 
 #team .single-team .team-social-icons ul.social-list li:hover {
-  background: #3ecf8e;
+  background: rgb(var(--primary));
   -moz-transition: all .4s ease;
   -webkit-transition: all .4s ease;
-  border-color: #3ecf8e;
+  border-color: var(--primary);
   transition: all .4s ease;
 }
 
@@ -819,7 +821,7 @@ p {
 }
 
 #team .single-team .team-social-icons ul.social-list li a i {
-  color: #3ecf8e;
+  color: rgb(var(--primary));
   font-size: 16px;
 }
 
@@ -844,7 +846,7 @@ p {
 
 #team .single-team .team-details p {
   font-size: 12px;
-  color: #5e629c;
+  color: rgb(var(--primary), .75);
 }
 
 #team .single-team .team-details p.team-bio {
@@ -989,7 +991,7 @@ p {
 }
 
 .single-services .services-content .services-title a:hover {
-  color: #361CC1;
+  color: rgb(var(--primary));
 }
 
 .single-services .services-content .text {
@@ -1022,7 +1024,7 @@ p {
 }
 
 .single-services:hover {
-  border-color: #fe7a7b;
+  border-color: rgb(var(--accent));
 }
 
 .single-services:hover .services-icon .shape {
@@ -1089,8 +1091,8 @@ p {
 }
 
 .about-content .main-btn {
-  background: -webkit-gradient(linear, left top, right top, from(#fe8464), color-stop(50%, #fe6e9a), to(#fe8464));
-  background: linear-gradient(to right, #fe8464 0%, #fe6e9a 50%, #fe8464 100%);
+  background: var(--webkit-accent-gradient);
+  background: var(--accent-gradient);
   background-size: 200%;
   height: 50px;
   line-height: 50px;
@@ -1126,11 +1128,12 @@ p {
   -moz-transition: all .8s ease;
   -webkit-transition: all .8s ease;
   transition: all .8s ease;
-  border-color: #3ecf8e;
+  border-color: rgb(var(--primary), .25);
 }
 
 #news .blog-item-wrapper:hover h3 a {
-  color: #3ecf8e;
+  color: rgb(var(--primary));
+  text-decoration: underline;
 }
 
 #news .blog-item-wrapper .blog-item-text {
@@ -1146,7 +1149,7 @@ p {
 }
 
 #news .blog-item-wrapper h3 a {
-  color: #151948;
+  color: rgb(var(--primary), .75);
   width: 100%;
   white-space: nowrap;
   overflow: hidden;
@@ -1173,10 +1176,11 @@ p {
   display: flex;
   justify-content: end;
   align-items: center;
+  color: rgb(var(--primary), .5);
 }
 
 #news .blog-item-wrapper small.date i {
-  color: #3ecf8e;
+  color: rgb(var(--primary), .5);
   margin-right: 5px;
 }
 
@@ -1396,7 +1400,7 @@ p {
 
 .subscribe-form select:focus,
 .subscribe-form input:focus {
-  border-color: #361CC1;
+  border-color: rgb(var(--primary));
 }
 
 .subscribe-form button {
@@ -1404,8 +1408,8 @@ p {
   border-radius: 5px;
   height: 65px;
   line-height: 65px;
-  background: -webkit-gradient(linear, left top, right top, from(#fe8464), color-stop(50%, #fe6e9a), to(#fe8464));
-  background: linear-gradient(to right, #fe8464 0%, #fe6e9a 50%, #fe8464 100%);
+  background: var(--webkit-accent-gradient);
+  background: var(--accent-gradient);
   background-size: 200%;
   width: 100%;
   margin-top: 10px;
@@ -1495,7 +1499,7 @@ p {
 }
 
 .footer-about .social li a:hover {
-  color: #fe8464;
+  color: rgb(var(--accent));
 }
 
 .footer-title .title {
@@ -1538,7 +1542,7 @@ p {
 }
 
 .link-wrapper .link li a:hover {
-  color: #fe8464;
+  color: rgb(var(--accent));
 }
 
 .footer-contact .contact {
@@ -1556,7 +1560,7 @@ p {
 }
 
 .footer-contact .contact li a:hover {
-  color: #fe8464;
+  color: rgb(var(--accent));
 }
 
 .footer-copyright {
@@ -1582,7 +1586,7 @@ p {
 }
 
 .copyright-content a:hover {
-  color: #fe8464;
+  color: rgb(var(--accent));
 }
 
 /*===== BACK TO TOP =====*/
@@ -1595,8 +1599,8 @@ p {
   width: 40px;
   height: 40px;
   border-radius: 5px;
-  background: -webkit-gradient(linear, left top, right top, from(#fe8464), color-stop(50%, #fe6e9a), to(#fe8464));
-  background: linear-gradient(to right, #fe8464 0%, #fe6e9a 50%, #fe8464 100%);
+  background: var(--webkit-accent-gradient);
+  background: var(--accent-gradient);
   background-size: 200%;
   text-align: center;
   z-index: 99;
