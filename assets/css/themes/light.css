@@ -4,8 +4,8 @@
 
   --accent: 226, 203, 74;
 
-  --webkit-accent-gradient: -webkit-gradient(linear, left top, right top, from(#e2cb4a), color-stop(50%, #feaf6e), to(#f1db5e));
-  --accent-gradient: linear-gradient(to right, #e2cb4a 0%, #feaf6e 50%, #f1db5e 100%);
+  --webkit-accent-gradient: -webkit-gradient(linear, left top, right top, from(#FFC107), color-stop(50%, #feaf6e), to(#f1db5e));
+  --accent-gradient: linear-gradient(to right, #FFC107 0%, #feaf6e 50%, #f1db5e 100%);
 
   --webkit-line-accent-gradient: -webkit-gradient(linear, left top, left bottom, from(#feaf6e), to(#f0fe6e));
   --line-accent-gradient: linear-gradient(#feaf6e 0%, #f0fe6e 100%);
