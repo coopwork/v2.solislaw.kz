@@ -2,7 +2,7 @@
   --background: #fff;
   --foreground: #000;
 
-  --accent: 226, 203, 74;
+  --accent: 255, 193, 7;
 
   --webkit-accent-gradient: -webkit-gradient(linear, left top, right top, from(#FFC107), color-stop(50%, #feaf6e), to(#f1db5e));
   --accent-gradient: linear-gradient(to right, #FFC107 0%, #feaf6e 50%, #f1db5e 100%);
